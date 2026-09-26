@@ -1,0 +1,19 @@
+{
+  "name": "agentflow-ai-root",
+  "version": "1.0.0",
+  "description": "Agentic AI Operations Automation Platform (Agentflow_AI)",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "Agentflow AI Team",
+  "license": "MIT"
+}
